@@ -1,0 +1,143 @@
+@import "./imports/_normalize.scss";
+
+/* SASS VARIABLES */
+$blue-color: #73bcea;
+$pink-color: #e576a9;
+$yellow-color: #e2af76;
+$grey-color: #dddada;
+
+
+/* BASE STYLES ....................*/
+* { 
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif; 
+}
+img {
+   width: 100%;
+   display: block;
+}
+
+
+/* CONTENT STYLES .................*/
+
+#app-container {
+	   	max-width: 100%;
+	   	border: 1px solid $blue-color;
+	   	height: 80vh;
+		margin: 3%;
+		display: block;
+
+	.shirt-container {
+		width: 90%;
+		border: 1px solid $pink-color;
+		margin: 10% auto;
+		height: 60vh;
+		display: block;
+	}
+
+	/*.placeholder-container {
+		width: 90%;
+		border: 1px solid $pink-color;
+		margin: 10% auto;
+		height: 60vh;
+		display: none;
+	} */
+}
+
+/* WEB RESPONSIVE STYLES ..........*/
+
+// MOBILE VIEW - If the device width is less than or equal to 479px apply the mobile view styles //
+@media screen and (min-width:480px) {
+	#app-container {
+		max-width: 100%;
+		display: inline-block;
+
+		.shirt-container {
+			width: 50%;
+			display: inline-block;
+		}
+
+		/*.placeholder-container {
+			max-width: 50%;
+			display: inline-block;
+		} */
+	}
+}
+
+/*/ TABLET VIEW - If the device width is greater than 401px and less than 700px apply the tablet view styles //
+@media only screen and (min-width:480px) {
+	#app-container{
+	   	max-width: 100%;
+	   	border: 1px solid $blue-color;
+	   	height: 80vh;
+		margin: 3%;
+		display: block;
+	}
+
+	.blueshirt-container {
+		width: 45%;
+		border: 1px solid $pink-color;
+		margin: 10% auto;
+		height: 60vh;
+		display: block;
+	}
+
+	.pinkshirt-container {
+		width: 45%;
+		border: 1px solid $pink-color;
+		margin: 10% auto;
+		height: 60vh;
+		display: block;
+	}
+
+	.yellowshirt-container {
+		width: 45%;
+		border: 1px solid $pink-color;
+		margin: 10% auto;
+		height: 60vh;
+		display: block;
+	}
+
+	/*.placeholder-container {
+		width: 45%;
+		border: 1px solid $pink-color;
+		margin: 10% auto;
+		height: 60vh;
+		display: inline-block;
+	} 
+}
+
+// DESKTOP VIEW //
+@media screen and (min-width:781px) {
+	#app-container{
+	   	max-width: 100%;
+	   	border: 1px solid $blue-color;
+	   	height: 80vh;
+		margin: 3% 3%;
+		display: inline-block;
+	}
+
+	.blueshirt-container {
+		max-width: 33%;
+		border: 1px solid $pink-color;
+		margin: 3% auto;
+		height: 60vh;
+		display: inline-block;
+	}
+
+	.pinkshirt-container {
+		max-width: 33%;
+		border: 1px solid $pink-color;
+		margin: 3% auto;
+		height: 60vh;
+		display: inline-block;
+	}
+
+	.yellowshirt-container {
+		max-width: 33%;
+		border: 1px solid $pink-color;
+		margin: 3% auto;
+		height: 60vh;
+		display: inline-block;
+	}
+} */
