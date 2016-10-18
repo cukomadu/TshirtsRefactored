@@ -378,111 +378,38 @@ img {
 #app-container {
   max-width: 100%;
   border: 1px solid #73bcea;
-  height: 80vh;
-  margin: 3%;
+  margin: 3% auto;
   display: block;
-  /*.placeholder-container {
-  	width: 90%;
-  	border: 1px solid $pink-color;
-  	margin: 10% auto;
-  	height: 60vh;
-  	display: none;
-  } */ }
-  #app-container .shirt-container {
+  font-size: 0; }
+  #app-container .tshirt-container {
     width: 90%;
     border: 1px solid #e576a9;
-    margin: 10% auto;
+    margin: 2% auto;
     height: 60vh;
-    display: block; }
+    display: block;
+    font-size: medium; }
 
-/* WEB RESPONSIVE STYLES ..........*/
 @media screen and (min-width: 480px) {
   #app-container {
-    max-width: 100%;
-    display: inline-block;
-    /*.placeholder-container {
-    	max-width: 50%;
-    	display: inline-block;
-    } */ }
-    #app-container .shirt-container {
-      width: 50%;
-      display: inline-block; } }
-/*/ TABLET VIEW - If the device width is greater than 401px and less than 700px apply the tablet view styles //
-@media only screen and (min-width:480px) {
-	#app-container{
-	   	max-width: 100%;
-	   	border: 1px solid $blue-color;
-	   	height: 80vh;
-		margin: 3%;
-		display: block;
-	}
-
-	.blueshirt-container {
-		width: 45%;
-		border: 1px solid $pink-color;
-		margin: 10% auto;
-		height: 60vh;
-		display: block;
-	}
-
-	.pinkshirt-container {
-		width: 45%;
-		border: 1px solid $pink-color;
-		margin: 10% auto;
-		height: 60vh;
-		display: block;
-	}
-
-	.yellowshirt-container {
-		width: 45%;
-		border: 1px solid $pink-color;
-		margin: 10% auto;
-		height: 60vh;
-		display: block;
-	}
-
-	/*.placeholder-container {
-		width: 45%;
-		border: 1px solid $pink-color;
-		margin: 10% auto;
-		height: 60vh;
-		display: inline-block;
-	} 
-}
-
-// DESKTOP VIEW //
-@media screen and (min-width:781px) {
-	#app-container{
-	   	max-width: 100%;
-	   	border: 1px solid $blue-color;
-	   	height: 80vh;
-		margin: 3% 3%;
-		display: inline-block;
-	}
-
-	.blueshirt-container {
-		max-width: 33%;
-		border: 1px solid $pink-color;
-		margin: 3% auto;
-		height: 60vh;
-		display: inline-block;
-	}
-
-	.pinkshirt-container {
-		max-width: 33%;
-		border: 1px solid $pink-color;
-		margin: 3% auto;
-		height: 60vh;
-		display: inline-block;
-	}
-
-	.yellowshirt-container {
-		max-width: 33%;
-		border: 1px solid $pink-color;
-		margin: 3% auto;
-		height: 60vh;
-		display: inline-block;
-	}
-} */
+    font-size: 0; }
+    #app-container .tshirt-container {
+      width: 42%;
+      border: 1px solid #e576a9;
+      margin: 5% 4%;
+      display: inline-block;
+      font-size: initial;
+      transition: all 1s ease; }
+    #app-container .pink-tshirt {
+      margin-left: 4%; } }
+@media screen and (min-width: 781px) {
+  #app-container {
+    font-size: 0; }
+    #app-container .tshirt-container {
+      width: 29.33%;
+      border: 1px solid #e576a9;
+      margin: 5% 2%;
+      display: inline-block;
+      font-size: initial;
+      transition: all 1s ease; } }
 
 /*# sourceMappingURL=styles.css.map */
