@@ -401,9 +401,8 @@ img {
       padding: 2%; }
     #app-container .tshirt-container .img-container {
       margin: 2% 8%;
-      height: 50vh; }
-      #app-container .tshirt-container .img-container img {
-        padding-top: 10%; }
+      height: 50vh;
+      overflow: hidden; }
     #app-container .tshirt-container .icon-container {
       border-top: 1px solid #73bcea;
       height: 12.6vh;
