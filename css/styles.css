@@ -371,25 +371,60 @@ textarea {
   font-family: "Roboto", sans-serif; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block; }
 
 /* CONTENT STYLES .................*/
 #app-container {
   max-width: 100%;
-  border: 1px solid #73bcea;
+  border: 1px solid #e576a9;
   margin: 3% auto;
   display: block;
   font-size: 0; }
   #app-container .tshirt-container {
     width: 90%;
-    border: 1px solid #e576a9;
-    margin: 2% auto;
-    height: 60vh;
+    border: 1px solid #73bcea;
+    margin: 5% auto;
+    height: 65vh;
     display: block;
-    font-size: medium; }
+    font-size: medium;
+    position: relative; }
+    #app-container .tshirt-container .img-flip-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      border-bottom: 1px solid #73bcea;
+      border-left: 1px solid #73bcea;
+      color: #73bcea;
+      padding: 2%; }
+    #app-container .tshirt-container .img-container {
+      margin: 2% 8%;
+      height: 50vh; }
+      #app-container .tshirt-container .img-container img {
+        padding-top: 10%; }
+    #app-container .tshirt-container .icon-container {
+      border-top: 1px solid #73bcea;
+      height: 12.6vh;
+      display: flex;
+      max-width: 100%; }
+      #app-container .tshirt-container .icon-container .all-icons {
+        flex: 1;
+        text-align: center;
+        font-size: large;
+        padding-top: 10%;
+        color: #73bcea; }
+      #app-container .tshirt-container .icon-container .heart-icon {
+        border-right: 1px solid #73bcea;
+        border-left: 1px solid #73bcea; }
+      #app-container .tshirt-container .icon-container .size-icon {
+        border-right: 1px solid #73bcea;
+        padding-top: 8%; }
+      #app-container .tshirt-container .icon-container .color-icon {
+        border-right: 1px solid #73bcea; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 550px) {
   #app-container {
     font-size: 0; }
     #app-container .tshirt-container {
@@ -398,10 +433,10 @@ img {
       margin: 5% 4%;
       display: inline-block;
       font-size: initial;
-      transition: all 1s ease; }
+      transition: all 0.5s ease; }
     #app-container .pink-tshirt {
       margin-left: 4%; } }
-@media screen and (min-width: 781px) {
+@media screen and (min-width: 880px) {
   #app-container {
     font-size: 0; }
     #app-container .tshirt-container {
@@ -410,6 +445,6 @@ img {
       margin: 5% 2%;
       display: inline-block;
       font-size: initial;
-      transition: all 1s ease; } }
+      transition: all 0.5s ease; } }
 
 /*# sourceMappingURL=styles.css.map */

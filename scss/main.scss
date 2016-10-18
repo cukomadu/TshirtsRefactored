@@ -13,17 +13,17 @@ $grey-color: #dddada;
    font-family: "Roboto", sans-serif; 
 }
 img {
-   width: 100%;
+   max-width: 100%;
    display: block;
 }
 
 
 /* CONTENT STYLES .................*/
-// MOBILE FIRST DESIGN - If the device width is less than or equal to 479px apply the mobile view styles //
+// MOBILE FIRST DESIGN - If the device width is 0px and less than 550px apply the mobile view styles //
 
 #app-container {
 	   	max-width: 100%;
-	   	border: 1px solid $blue-color;
+	   	border: 1px solid $pink-color;
 		margin: 3% auto;
 		display: block;
 		font-size: 0;
@@ -31,18 +31,80 @@ img {
 
 	.tshirt-container {
 		width: 90%;
-		border: 1px solid $pink-color;
-		margin: 2% auto;
-		height: 60vh;
+		border: 1px solid $blue-color;
+		margin: 5% auto;
+		height: 65vh;
 		display: block;
 		font-size: medium;
+		position: relative;
+
+		.img-flip-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30px;
+			height: 30px;
+			border-bottom: 1px solid $blue-color;
+			border-left: 1px solid $blue-color;
+			color: $blue-color;
+			padding: 2%;
+			
+			.flip-icon {
+				//padding: 2%;
+			}
+		}
+
+		.img-container {
+		margin: 2% 8%;
+		//border: 1px solid $yellow-color;
+		height: 50vh;
+
+			img {
+				//margin-top: 10%;
+				padding-top: 10%;
+				//padding-bottom: -5%;
+			}
+		}
+
+		.icon-container {
+			border-top: 1px solid $blue-color;
+			height: 12.6vh;
+			display: flex;
+			max-width: 100%;
+			//margin-top: 0;
+			//margin-bottom: 0;
+			//font-size: 0;
+
+
+			.all-icons {
+				flex: 1;
+				text-align: center;
+				font-size: large;
+				padding-top: 10%;
+				color: $blue-color;
+			}
+
+			.heart-icon {
+				border-right: 1px solid $blue-color;
+				border-left: 1px solid $blue-color;
+			}
+
+			.size-icon {
+				border-right: 1px solid $blue-color;
+				padding-top: 8%;
+			}
+
+			.color-icon {
+				border-right: 1px solid $blue-color;
+			}
+		}
 	}
 }
 
 // WEB RESPONSIVE STYLES..........//
 
-// TABLET VIEW - If the device width is greater than 401px and less than 700px apply the tablet view styles //
-@media screen and (min-width: 480px) {
+// TABLET VIEW - If the device width is greater than 550px, apply the tablet view styles //
+@media screen and (min-width: 550px) {
 	#app-container {
 		font-size: 0;
 
@@ -52,7 +114,7 @@ img {
 			margin: 5% 4%;
 			display: inline-block;
 			font-size: initial;
-			transition: all 1s ease;
+			transition: all 0.5s ease;
 		}
 
 		.pink-tshirt {
@@ -62,8 +124,8 @@ img {
 }
 
 
-// DESKTOP VIEW //
-@media screen and (min-width:781px) {
+// DESKTOP VIEW - If the device width is greater than 880px, apply the desktop view styles //
+@media screen and (min-width: 880px) {
 	#app-container {
 		font-size: 0;
 
@@ -73,7 +135,7 @@ img {
 			margin: 5% 2%;
 			display: inline-block;
 			font-size: initial;
-			transition: all 1s ease;
+			transition: all 0.5s ease;
 		}
 	}
 } 
