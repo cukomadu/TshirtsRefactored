@@ -5,6 +5,7 @@ $blue-color: #73bcea;
 $pink-color: #e576a9;
 $yellow-color: #e2af76;
 $grey-color: #dddada;
+$white-color: #ffffff;
 
 
 /* BASE STYLES ....................*/
@@ -20,7 +21,6 @@ $grey-color: #dddada;
 
 #app-container {
 	   	max-width: 100%;
-	   	border: 1px solid $pink-color;
 		margin: 3% auto;
 		display: block;
 		font-size: 0;
@@ -28,30 +28,14 @@ $grey-color: #dddada;
 
 	.tshirt-container {
 		width: 90%;
-		border: 1px solid $blue-color;
+		border: 3px solid $blue-color;
 		margin: 5% auto;
 		display: block;
 		font-size: medium;
 		position: relative;
 
-		.img-flip-container {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 30px;
-			height: 30px;
-			border-bottom: 1px solid $blue-color;
-			border-left: 1px solid $blue-color;
-			color: $blue-color;
-			padding: 2%;
-			
-			.flip-icon {
-				
-			}
-		}
-
 		.img-container {
-		margin-top: 8px;
+			margin-top: 8px;
 
 			img {
   				width: 100%;
@@ -60,12 +44,32 @@ $grey-color: #dddada;
   				padding: 20px;
 			}
 		}
+	}
+
+	.blue-tshirt {
+
+		.img-flip-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			border-bottom: 3px solid $blue-color;
+			border-left: 3px solid $blue-color;
+			color: $blue-color;
+			padding: 2%;
+			font-size: x-large;
+		}
+
+		.img-flip-container:hover {
+			background-color: $blue-color;
+			color: $white-color;
+		}
 
 		.icon-container {
-			border-top: 1px solid $blue-color;
+			border-top: 3px solid $blue-color;
 			display: flex;
-			//height: 70px;
-
+			
 			.all-icons {
 				flex: 1;
 				text-align: center;
@@ -76,17 +80,132 @@ $grey-color: #dddada;
 			}
 
 			.heart-icon {
-				border-right: 1px solid $blue-color;
-				border-left: 1px solid $blue-color;
+				border-right: 3px solid $blue-color;
+				border-left: 3px solid $blue-color;
 			}
 
 			.size-icon {
-				border-right: 1px solid $blue-color;
+				border-right: 3px solid $blue-color;
 				padding-top: 15px;
 			}
 
 			.color-icon {
-				border-right: 1px solid $blue-color;
+				border-right: 3px solid $blue-color;
+			}
+
+			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
+				color: $white-color;
+				background-color: $blue-color;
+			}
+		}
+	}
+
+	.pink-tshirt {
+
+		.img-flip-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			border-bottom: 3px solid $blue-color;
+			border-left: 3px solid $blue-color;
+			color: $pink-color;
+			padding: 2%;
+			font-size: x-large;
+		}
+
+		.img-flip-container:hover {
+			background-color: $blue-color;
+			color: $white-color;
+		}
+
+		.icon-container {
+			border-top: 3px solid $blue-color;
+			display: flex;
+			
+			.all-icons {
+				flex: 1;
+				text-align: center;
+				font-size: x-large;
+				padding-top: 20px;
+				color: $blue-color;
+				height: 60px;
+			}
+
+			.heart-icon {
+				border-right: 3px solid $blue-color;
+				border-left: 3px solid $blue-color;
+			}
+
+			.size-icon {
+				border-right: 3px solid $blue-color;
+				padding-top: 15px;
+			}
+
+			.color-icon {
+				border-right: 3px solid $blue-color;
+				color: $pink-color;
+			}
+
+			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
+				color: $white-color;
+				background-color: $blue-color;
+			}
+		}
+	}
+
+	.yellow-tshirt {
+
+		.img-flip-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			border-bottom: 3px solid $blue-color;
+			border-left: 3px solid $blue-color;
+			color: $yellow-color;
+			padding: 2%;
+			font-size: x-large;
+		}
+
+		.img-flip-container:hover {
+			background-color: $blue-color;
+			color: $white-color;
+		}
+
+		.icon-container {
+			border-top: 3px solid $blue-color;
+			display: flex;
+			
+			.all-icons {
+				flex: 1;
+				text-align: center;
+				font-size: x-large;
+				padding-top: 20px;
+				color: $blue-color;
+				height: 60px;
+			}
+
+			.heart-icon {
+				border-right: 3px solid $blue-color;
+				border-left: 3px solid $blue-color;
+			}
+
+			.size-icon {
+				border-right: 3px solid $blue-color;
+				padding-top: 15px;
+			}
+
+			.color-icon {
+				border-right: 3px solid $blue-color;
+				color: $yellow-color;
+			}
+
+			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
+				color: $white-color;
+				background-color: $blue-color;
 			}
 		}
 	}
@@ -101,15 +220,11 @@ $grey-color: #dddada;
 
 		.tshirt-container {
 			width: 42%;
-			border: 1px solid $pink-color;
+			border: 3px solid $blue-color;
 			margin: 5% 4%;
 			display: inline-block;
 			font-size: initial;
-			transition: all 0.5s ease;
-		}
-
-		.pink-tshirt {
-			margin-left: 4%;
+			transition: all 0.4s ease;
 		}
 	}
 }
@@ -122,11 +237,11 @@ $grey-color: #dddada;
 
 		.tshirt-container {
 			width: 29.33%;
-			border: 1px solid $pink-color;
+			border: 3px solid $blue-color;
 			margin: 5% 2%;
 			display: inline-block;
 			font-size: initial;
-			transition: all 0.5s ease;
+			transition: all 0.4s ease;
 		}
 	}
 } 

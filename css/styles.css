@@ -373,27 +373,16 @@ textarea {
 /* CONTENT STYLES .................*/
 #app-container {
   max-width: 100%;
-  border: 1px solid #e576a9;
   margin: 3% auto;
   display: block;
   font-size: 0; }
   #app-container .tshirt-container {
     width: 90%;
-    border: 1px solid #73bcea;
+    border: 3px solid #73bcea;
     margin: 5% auto;
     display: block;
     font-size: medium;
     position: relative; }
-    #app-container .tshirt-container .img-flip-container {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 30px;
-      height: 30px;
-      border-bottom: 1px solid #73bcea;
-      border-left: 1px solid #73bcea;
-      color: #73bcea;
-      padding: 2%; }
     #app-container .tshirt-container .img-container {
       margin-top: 8px; }
       #app-container .tshirt-container .img-container img {
@@ -401,46 +390,133 @@ textarea {
         display: block;
         margin: auto;
         padding: 20px; }
-    #app-container .tshirt-container .icon-container {
-      border-top: 1px solid #73bcea;
-      display: flex; }
-      #app-container .tshirt-container .icon-container .all-icons {
-        flex: 1;
-        text-align: center;
-        font-size: x-large;
-        padding-top: 20px;
-        color: #73bcea;
-        height: 60px; }
-      #app-container .tshirt-container .icon-container .heart-icon {
-        border-right: 1px solid #73bcea;
-        border-left: 1px solid #73bcea; }
-      #app-container .tshirt-container .icon-container .size-icon {
-        border-right: 1px solid #73bcea;
-        padding-top: 15px; }
-      #app-container .tshirt-container .icon-container .color-icon {
-        border-right: 1px solid #73bcea; }
+  #app-container .blue-tshirt .img-flip-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 3px solid #73bcea;
+    border-left: 3px solid #73bcea;
+    color: #73bcea;
+    padding: 2%;
+    font-size: x-large; }
+  #app-container .blue-tshirt .img-flip-container:hover {
+    background-color: #73bcea;
+    color: #ffffff; }
+  #app-container .blue-tshirt .icon-container {
+    border-top: 3px solid #73bcea;
+    display: flex; }
+    #app-container .blue-tshirt .icon-container .all-icons {
+      flex: 1;
+      text-align: center;
+      font-size: x-large;
+      padding-top: 20px;
+      color: #73bcea;
+      height: 60px; }
+    #app-container .blue-tshirt .icon-container .heart-icon {
+      border-right: 3px solid #73bcea;
+      border-left: 3px solid #73bcea; }
+    #app-container .blue-tshirt .icon-container .size-icon {
+      border-right: 3px solid #73bcea;
+      padding-top: 15px; }
+    #app-container .blue-tshirt .icon-container .color-icon {
+      border-right: 3px solid #73bcea; }
+    #app-container .blue-tshirt .icon-container .arrow-icon:hover, #app-container .blue-tshirt .icon-container .heart-icon:hover, #app-container .blue-tshirt .icon-container .cart-icon:hover {
+      color: #ffffff;
+      background-color: #73bcea; }
+  #app-container .pink-tshirt .img-flip-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 3px solid #73bcea;
+    border-left: 3px solid #73bcea;
+    color: #e576a9;
+    padding: 2%;
+    font-size: x-large; }
+  #app-container .pink-tshirt .img-flip-container:hover {
+    background-color: #73bcea;
+    color: #ffffff; }
+  #app-container .pink-tshirt .icon-container {
+    border-top: 3px solid #73bcea;
+    display: flex; }
+    #app-container .pink-tshirt .icon-container .all-icons {
+      flex: 1;
+      text-align: center;
+      font-size: x-large;
+      padding-top: 20px;
+      color: #73bcea;
+      height: 60px; }
+    #app-container .pink-tshirt .icon-container .heart-icon {
+      border-right: 3px solid #73bcea;
+      border-left: 3px solid #73bcea; }
+    #app-container .pink-tshirt .icon-container .size-icon {
+      border-right: 3px solid #73bcea;
+      padding-top: 15px; }
+    #app-container .pink-tshirt .icon-container .color-icon {
+      border-right: 3px solid #73bcea;
+      color: #e576a9; }
+    #app-container .pink-tshirt .icon-container .arrow-icon:hover, #app-container .pink-tshirt .icon-container .heart-icon:hover, #app-container .pink-tshirt .icon-container .cart-icon:hover {
+      color: #ffffff;
+      background-color: #73bcea; }
+  #app-container .yellow-tshirt .img-flip-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 3px solid #73bcea;
+    border-left: 3px solid #73bcea;
+    color: #e2af76;
+    padding: 2%;
+    font-size: x-large; }
+  #app-container .yellow-tshirt .img-flip-container:hover {
+    background-color: #73bcea;
+    color: #ffffff; }
+  #app-container .yellow-tshirt .icon-container {
+    border-top: 3px solid #73bcea;
+    display: flex; }
+    #app-container .yellow-tshirt .icon-container .all-icons {
+      flex: 1;
+      text-align: center;
+      font-size: x-large;
+      padding-top: 20px;
+      color: #73bcea;
+      height: 60px; }
+    #app-container .yellow-tshirt .icon-container .heart-icon {
+      border-right: 3px solid #73bcea;
+      border-left: 3px solid #73bcea; }
+    #app-container .yellow-tshirt .icon-container .size-icon {
+      border-right: 3px solid #73bcea;
+      padding-top: 15px; }
+    #app-container .yellow-tshirt .icon-container .color-icon {
+      border-right: 3px solid #73bcea;
+      color: #e2af76; }
+    #app-container .yellow-tshirt .icon-container .arrow-icon:hover, #app-container .yellow-tshirt .icon-container .heart-icon:hover, #app-container .yellow-tshirt .icon-container .cart-icon:hover {
+      color: #ffffff;
+      background-color: #73bcea; }
 
 @media screen and (min-width: 550px) {
   #app-container {
     font-size: 0; }
     #app-container .tshirt-container {
       width: 42%;
-      border: 1px solid #e576a9;
+      border: 3px solid #73bcea;
       margin: 5% 4%;
       display: inline-block;
       font-size: initial;
-      transition: all 0.5s ease; }
-    #app-container .pink-tshirt {
-      margin-left: 4%; } }
+      transition: all 0.4s ease; } }
 @media screen and (min-width: 880px) {
   #app-container {
     font-size: 0; }
     #app-container .tshirt-container {
       width: 29.33%;
-      border: 1px solid #e576a9;
+      border: 3px solid #73bcea;
       margin: 5% 2%;
       display: inline-block;
       font-size: initial;
-      transition: all 0.5s ease; } }
+      transition: all 0.4s ease; } }
 
 /*# sourceMappingURL=styles.css.map */
