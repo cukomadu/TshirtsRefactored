@@ -421,7 +421,37 @@ textarea {
       border-right: 3px solid #73bcea;
       padding-top: 15px; }
     #app-container .blue-tshirt .icon-container .color-icon {
-      border-right: 3px solid #73bcea; }
+      border-right: 3px solid #73bcea;
+      position: relative; }
+      #app-container .blue-tshirt .icon-container .color-icon .color-options {
+        opacity: 0;
+        transition: 0.5s all ease;
+        border: 3px solid #73bcea;
+        position: absolute;
+        width: 75px;
+        top: -83;
+        left: -10;
+        background-color: #ffffff;
+        border-bottom: 1px solid #73bcea; }
+        #app-container .blue-tshirt .icon-container .color-icon .color-options .down-arrow-effect {
+          width: 16px;
+          height: 16px;
+          background-color: #ffffff;
+          border-top: 3px solid #ffffff;
+          border-left: 3px solid #ffffff;
+          border-right: 3px solid #73bcea;
+          border-bottom: 3px solid #73bcea;
+          transform: rotate(45deg);
+          position: absolute;
+          bottom: -10.8%;
+          left: 37%; }
+    #app-container .blue-tshirt .icon-container .color-icon:hover {
+      background-color: #73bcea; }
+      #app-container .blue-tshirt .icon-container .color-icon:hover i {
+        border: 3px solid #ffffff;
+        border-radius: 5%; }
+      #app-container .blue-tshirt .icon-container .color-icon:hover .color-options {
+        opacity: 1; }
     #app-container .blue-tshirt .icon-container .arrow-icon:hover, #app-container .blue-tshirt .icon-container .heart-icon:hover, #app-container .blue-tshirt .icon-container .cart-icon:hover {
       color: #ffffff;
       background-color: #73bcea; }
