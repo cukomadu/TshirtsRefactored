@@ -1,0 +1,771 @@
+@import "./imports/_normalize.scss";
+
+/* SASS VARIABLES */
+$blue-color: #73bcea;
+$pink-color: #e576a9;
+$yellow-color: #e2af76;
+$grey-color: #dddada;
+$white-color: #ffffff;
+$green-color: #6fb76f;
+
+/* BASE STYLES ....................*/
+* { 
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif; 
+}
+
+
+
+/* CONTENT STYLES .................*/
+// MOBILE FIRST DESIGN - If the device width is 0px and less than 550px apply the mobile view styles //
+
+#app-container {
+	   	max-width: 100%;
+		margin: 3% auto;
+		display: block;
+		font-size: 0;
+		
+
+	.tshirt-container {
+		width: 90%;
+		border: 3px solid $blue-color;
+		margin: 5% auto;
+		display: block;
+		font-size: medium;
+		position: relative;
+
+		.img-container {
+			margin-top: 8px;
+
+			img {
+  				width: 100%;
+   				display: block;
+  				margin: auto;
+  				padding: 20px;
+			}
+		}
+	}
+
+	//.blue-tshirt {
+
+		.img-flip-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			border-bottom: 3px solid $blue-color;
+			border-left: 3px solid $blue-color;
+			color: $blue-color;
+			padding: 2%;
+			font-size: x-large;
+		}
+
+		.img-flip-container:hover {
+			background-color: $blue-color;
+			color: $white-color;
+		}
+
+		.icon-container {
+			border-top: 3px solid $blue-color;
+			display: flex;
+			
+			.all-icons {
+				flex: 1;
+				text-align: center;
+				font-size: x-large;
+				padding-top: 20px;
+				color: $blue-color;
+				height: 60px;
+			}
+
+			.heart-icon {
+				border-right: 3px solid $blue-color;
+				border-left: 3px solid $blue-color;
+			}
+
+			.size-icon {
+				border-right: 3px solid $blue-color;
+				padding-top: 15px;
+			}
+
+			.color-icon {
+				border-right: 3px solid $blue-color;
+				position: relative;
+
+				.color-options {
+					opacity: 0;
+					//transition: 0.3s all ease;
+					border: 3px solid $blue-color;
+					position: absolute;
+					width: 100px;
+					//padding: 5px;
+					top: -178%;
+					left: -22%;
+					cursor: pointer;
+					background-color: $white-color;
+					border-bottom: 1px solid $blue-color;
+					font-size: xx-large;
+
+					.blue-option {
+						color: $blue-color;	
+					}
+
+					.yellow-option {
+						color: $yellow-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; */	
+					}
+
+					.yellow-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.pink-option {
+						color: $pink-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; */
+					}
+
+					.pink-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.green-option {
+						color: $green-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; */
+					}
+
+					.green-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.down-arrow-effect {
+						width: 18px;
+						height: 18px;
+						background-color: $white-color;
+					  	border-top: 3px solid $white-color;
+						border-left: 3px solid $white-color; 
+						border-right: 3px solid $blue-color;
+						border-bottom: 3px solid $blue-color;
+						transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						//transition: 0.3s all ease;
+						position: absolute;
+						bottom: -9%;
+						left: 40%;
+					}
+				}
+			}
+
+			.color-icon:hover {
+
+				background-color: $blue-color;
+				color: $white-color;
+
+				.color-options {
+					opacity: 1;
+				}
+			}
+
+			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
+				color: $white-color;
+				background-color: $blue-color;
+			}
+		}
+//	}
+
+/*	.pink-tshirt {
+
+		.img-flip-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			border-bottom: 3px solid $blue-color;
+			border-left: 3px solid $blue-color;
+			color: $pink-color;
+			padding: 2%;
+			font-size: x-large;
+		}
+
+		.img-flip-container:hover {
+			background-color: $blue-color;
+			color: $white-color;
+		}
+
+		.icon-container {
+			border-top: 3px solid $blue-color;
+			display: flex;
+			
+			.all-icons {
+				flex: 1;
+				text-align: center;
+				font-size: x-large;
+				padding-top: 20px;
+				color: $blue-color;
+				height: 60px;
+			}
+
+			.heart-icon {
+				border-right: 3px solid $blue-color;
+				border-left: 3px solid $blue-color;
+			}
+
+			.size-icon {
+				border-right: 3px solid $blue-color;
+				padding-top: 15px;
+			}
+
+			.color-icon {
+				border-right: 3px solid $blue-color;
+				color: $pink-color;
+
+				.color-options {
+					opacity: 0;
+					//transition: 0.3s all ease;
+					border: 3px solid $blue-color;
+					position: absolute;
+					width: 100px;
+					//padding: 5px;
+					top: -178%;
+					left: -22%;
+					cursor: pointer;
+					background-color: $white-color;
+					border-bottom: 1px solid $blue-color;
+					font-size: xx-large;
+
+					.blue-option {
+						color: $blue-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 
+					}
+					/*
+					.blue-option:hover {
+						//transform: scale(1.5);
+					} 
+
+					.yellow-option {
+						color: $yellow-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 
+					}
+
+					.yellow-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.pink-option {
+						color: $pink-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 
+					}
+
+					.pink-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.green-option {
+						color: $green-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 
+					}
+
+					.green-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.down-arrow-effect {
+						width: 18px;
+						height: 18px;
+						background-color: $white-color;
+					  	border-top: 3px solid $white-color;
+						border-left: 3px solid $white-color; 
+						border-right: 3px solid $blue-color;
+						border-bottom: 3px solid $blue-color;
+						transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						//transition: 0.3s all ease;
+						position: absolute;
+						bottom: -9%;
+						left: 40%;
+					}
+				}
+			}
+
+			.color-icon:hover {
+
+				background-color: $grey-color;
+
+				.color-options {
+					opacity: 1;
+				}
+			}
+
+
+			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
+				color: $white-color;
+				background-color: $blue-color;
+			}
+		}
+	}
+
+	.yellow-tshirt {
+
+		.img-flip-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			border-bottom: 3px solid $blue-color;
+			border-left: 3px solid $blue-color;
+			color: $yellow-color;
+			padding: 2%;
+			font-size: x-large;
+		}
+
+		.img-flip-container:hover {
+			background-color: $blue-color;
+			color: $white-color;
+		}
+
+		.icon-container {
+			border-top: 3px solid $blue-color;
+			display: flex;
+			
+			.all-icons {
+				flex: 1;
+				text-align: center;
+				font-size: x-large;
+				padding-top: 20px;
+				color: $blue-color;
+				height: 60px;
+			}
+
+			.heart-icon {
+				border-right: 3px solid $blue-color;
+				border-left: 3px solid $blue-color;
+			}
+
+			.size-icon {
+				border-right: 3px solid $blue-color;
+				padding-top: 15px;
+			}
+
+			.color-icon {
+				border-right: 3px solid $blue-color;
+				color: $yellow-color;
+
+				.color-options {
+					opacity: 0;
+					//transition: 0.3s all ease;
+					border: 3px solid $blue-color;
+					position: absolute;
+					width: 100px;
+					//padding: 5px;
+					top: -178%;
+					left: -22%;
+					cursor: pointer;
+					background-color: $white-color;
+					border-bottom: 1px solid $blue-color;
+					font-size: xx-large;
+
+					.blue-option {
+						color: $blue-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 	
+					}
+
+					.blue-option:hover {
+						//transform: scale(1.5);
+					} 
+
+					.yellow-option {
+						color: $yellow-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 	
+					}
+
+					.yellow-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.pink-option {
+						color: $pink-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 
+					}
+
+					.pink-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.green-option {
+						color: $green-color;
+						/*-webkit-transition: all .2s ease-in-out;
+						-moz-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out; 
+					}
+
+					.green-option:hover {
+						//transform: scale(1.5);
+					}
+
+					.down-arrow-effect {
+						width: 18px;
+						height: 18px;
+						background-color: $white-color;
+					  	border-top: 3px solid $white-color;
+						border-left: 3px solid $white-color; 
+						border-right: 3px solid $blue-color;
+						border-bottom: 3px solid $blue-color;
+						transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						//transition: 0.3s all ease;
+						position: absolute;
+						bottom: -9%;
+						left: 40%;
+					}
+				}
+			}
+
+			.color-icon:hover {
+
+				background-color: $blue-color;
+
+				i {
+					//border: 3px solid $white-color;
+					//border-radius: 5%;
+				}
+
+				.color-options {
+					opacity: 1;
+				}
+			}
+
+
+			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
+				color: $white-color;
+				background-color: $blue-color;
+			}
+		}
+	} */
+}
+
+// WEB RESPONSIVE STYLES..........//
+
+// LARGE MOBILE SCREENS
+@media screen and (min-width: 375px){
+	#app-container {
+
+		.tshirt-container {
+
+			.icon-container{
+
+				.color-icon {
+
+					.color-options {
+						opacity: 0;
+						//transition: 0.3s all ease;
+						border: 3px solid $blue-color;
+						position: absolute;
+						width: 100px;
+						padding: 15px;
+						top: -230%;
+						left: -28%;
+						cursor: pointer;
+						background-color: $white-color;
+						border-bottom: 1px solid $blue-color;
+						font-size: xx-large;
+
+						.down-arrow-effect {
+							width: 20px;
+							height: 20px;
+							background-color: $white-color;
+						  	border-top: 3px solid $white-color;
+							border-left: 3px solid $white-color; 
+							border-right: 3px solid $blue-color;
+							border-bottom: 3px solid $blue-color;
+							transform: rotate(45deg);
+							-webkit-transform: rotate(45deg);
+							-moz-transform: rotate(45deg);
+							position: absolute;
+							bottom: -8%;
+							left: 38%;
+						}
+					}
+				}
+			}	
+		}
+	}
+} 
+
+@media screen and (min-width: 425px){
+	#app-container {
+
+		.tshirt-container {
+
+			.icon-container{
+
+				.color-icon {
+
+					.color-options {
+						opacity: 0;
+						//transition: 0.3s all ease;
+						border: 3px solid $blue-color;
+						position: absolute;
+						width: 100px;
+						padding: 15px;
+						top: -230%;
+						left: -18%;
+						cursor: pointer;
+						background-color: $white-color;
+						border-bottom: 1px solid $blue-color;
+						font-size: xx-large;
+
+						.down-arrow-effect {
+							bottom: -8%;
+							left: 38%;
+						}
+					}
+				}
+			}	
+		}
+	}
+} 
+
+// TABLET VIEW - If the device width is greater than 550px, apply the tablet view styles //
+@media screen and (min-width: 550px) {
+	#app-container {
+		font-size: 0;
+
+		.tshirt-container {
+			width: 42%;
+			border: 3px solid $blue-color;
+			margin: 5% 4%;
+			display: inline-block;
+			font-size: initial;
+			transition: all 0.4s ease;
+
+			.icon-container{
+
+				.color-icon {
+
+					.color-options {
+						opacity: 0;
+						//transition: 0.3s all ease;
+						border: 3px solid $blue-color;
+						position: absolute;
+						width: 100px;
+						//padding: 5px;
+						top: -188%;
+						left: -66%;
+						cursor: pointer;
+						background-color: $white-color;
+						border-bottom: 1px solid $blue-color;
+						font-size: x-large;
+
+						.down-arrow-effect {
+							width: 18px;
+							height: 18px;
+							background-color: $white-color;
+						  	border-top: 3px solid $white-color;
+							border-left: 3px solid $white-color; 
+							border-right: 3px solid $blue-color;
+							border-bottom: 3px solid $blue-color;
+							transform: rotate(45deg);
+							-webkit-transform: rotate(45deg);
+							-moz-transform: rotate(45deg);
+							position: absolute;
+							bottom: -9%;
+							left: 39%;
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+// DESKTOP VIEW - If the device width is greater than 880px, apply the desktop view styles //
+@media screen and (min-width: 880px) {
+	#app-container {
+		font-size: 0;
+
+		.tshirt-container {
+			width: 29.33%;
+			border: 3px solid $blue-color;
+			margin: 5% 2%;
+			display: inline-block;
+			font-size: initial;
+			transition: all 0.4s ease;
+
+			.icon-container {
+
+				.color-icon {
+
+					.color-options {
+						top: -188%;
+						left: -52%;
+						font-size: x-large;
+
+						.blue-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.blue-option:hover {
+							transform: scale(1.4);
+						} 
+
+						.yellow-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.yellow-option:hover {
+							transform: scale(1.4);
+						}
+
+						.pink-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.pink-option:hover {
+							transform: scale(1.4);
+						}
+
+						.green-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.green-option:hover {
+							transform: scale(1.4);
+						}
+
+
+						.down-arrow-effect {
+							bottom: -8.8%;
+							left: 40%;
+						}
+					}
+				}
+			}	
+		}
+	}
+} 
+
+@media screen and (min-width: 1024px) {
+	#app-container {
+
+		.tshirt-container {
+
+			.icon-container {
+
+				.color-icon {
+
+					.color-options {
+						top: -188%;
+						left: -39%;
+						font-size: x-large;
+
+						.blue-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.blue-option:hover {
+							transform: scale(1.4);
+						} 
+
+						.yellow-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.yellow-option:hover {
+							transform: scale(1.4);
+						}
+
+						.pink-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.pink-option:hover {
+							transform: scale(1.4);
+						}
+
+						.green-option {
+							-webkit-transition: all .2s ease-in-out;
+							-moz-transition: all .2s ease-in-out;
+							transition: all .2s ease-in-out; 
+						}
+
+						.green-option:hover {
+							transform: scale(1.4);
+						}
+
+
+						.down-arrow-effect {
+							bottom: -8%;
+							left: 40%;
+						}
+					}
+				}
+			}	
+		}
+	}
+} 
+
+@media screen and (min-width: 1227px) {
+	#app-container {
+
+		.tshirt-container {
+
+			.icon-container {
+
+				.color-icon {
+
+					.color-options {
+						top: -188%;
+						left: -20%;
+						font-size: x-large;
+
+						.down-arrow-effect {
+							bottom: -9%;
+							left: 40%;
+						}
+					}
+				}
+			}	
+		}
+	}
+} 
+
+

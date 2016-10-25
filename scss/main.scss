@@ -6,10 +6,7 @@ $pink-color: #e576a9;
 $yellow-color: #e2af76;
 $grey-color: #dddada;
 $white-color: #ffffff;
-$soft-blue: #8fc9ee;
-
-//https://github.com/kaylant/tshirts/blob/master/images/t-shirt1.svg
-
+$green-color: #6fb76f;
 
 /* BASE STYLES ....................*/
 * { 
@@ -37,20 +34,8 @@ $soft-blue: #8fc9ee;
 		font-size: medium;
 		position: relative;
 
-		.img-container {
-			margin-top: 8px;
 
-			img {
-  				width: 100%;
-   				display: block;
-  				margin: auto;
-  				padding: 20px;
-			}
-		}
-	}
-
-	.blue-tshirt {
-
+		// FLIP ARROW CONTAINER
 		.img-flip-container {
 			position: absolute;
 			top: 0;
@@ -69,6 +54,21 @@ $soft-blue: #8fc9ee;
 			color: $white-color;
 		}
 
+
+		// T-SHIRT IMAGE CONTAINER
+		.img-container {
+			margin-top: 8px;
+
+			img {
+  				width: 100%;
+   				display: block;
+  				margin: auto;
+  				padding: 20px;
+			}
+		}
+
+
+		// T-SHIRT ICON CONTAINER
 		.icon-container {
 			border-top: 3px solid $blue-color;
 			display: flex;
@@ -90,6 +90,38 @@ $soft-blue: #8fc9ee;
 			.size-icon {
 				border-right: 3px solid $blue-color;
 				padding-top: 15px;
+
+				.size-options {
+					opacity: 0;
+					transition: 0.3s all ease;
+					border: 3px solid $blue-color;
+					position: absolute;
+					//width: 100px;
+					//padding: 5px;
+					top: -185.7%;
+					left: 34.8%;
+					cursor: pointer;
+					background-color: $white-color;
+					border-bottom: 1px solid $blue-color;
+					//font-size: xx-large;
+
+					.down-arrow-effect {
+						width: 14px;
+						height: 14px;
+						background-color: $white-color;
+					  	border-top: 3px solid $white-color;
+						border-left: 3px solid $white-color; 
+						border-right: 3px solid $blue-color;
+						border-bottom: 3px solid $blue-color;
+						transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						//transition: 0.3s all ease;
+						position: absolute;
+						bottom: -3%;
+						left: 42%;
+					}
+				}
 			}
 
 			.color-icon {
@@ -98,27 +130,33 @@ $soft-blue: #8fc9ee;
 
 				.color-options {
 					opacity: 0;
-					transition: 0.5s all ease;
+					transition: 0.3s all ease;
 					border: 3px solid $blue-color;
 					position: absolute;
-					width: 75px;
-					top: -83;
-					left: -10;
+					width: 100px;
+					//padding: 5px;
+					top: -168%;
+					left: -29%;
+					cursor: pointer;
 					background-color: $white-color;
 					border-bottom: 1px solid $blue-color;
+					//font-size: xx-large;
 
 					.down-arrow-effect {
-						width: 16px;
-						height: 16px;
+						width: 14px;
+						height: 14px;
 						background-color: $white-color;
 					  	border-top: 3px solid $white-color;
 						border-left: 3px solid $white-color; 
 						border-right: 3px solid $blue-color;
 						border-bottom: 3px solid $blue-color;
 						transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						//transition: 0.3s all ease;
 						position: absolute;
-						bottom: -10.8%;
-						left: 37%;
+						bottom: -7%;
+						left: 42%;
 					}
 				}
 			}
@@ -126,125 +164,21 @@ $soft-blue: #8fc9ee;
 			.color-icon:hover {
 
 				background-color: $blue-color;
-
-				i {
-					border: 3px solid $white-color;
-					border-radius: 5%;
-				}
+				color: $white-color;
 
 				.color-options {
 					opacity: 1;
 				}
 			}
 
-			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
-				color: $white-color;
+			.size-icon:hover {
+
 				background-color: $blue-color;
-			}
-		}
-	}
-
-	.pink-tshirt {
-
-		.img-flip-container {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 40px;
-			height: 40px;
-			border-bottom: 3px solid $blue-color;
-			border-left: 3px solid $blue-color;
-			color: $pink-color;
-			padding: 2%;
-			font-size: x-large;
-		}
-
-		.img-flip-container:hover {
-			background-color: $blue-color;
-			color: $white-color;
-		}
-
-		.icon-container {
-			border-top: 3px solid $blue-color;
-			display: flex;
-			
-			.all-icons {
-				flex: 1;
-				text-align: center;
-				font-size: x-large;
-				padding-top: 20px;
-				color: $blue-color;
-				height: 60px;
-			}
-
-			.heart-icon {
-				border-right: 3px solid $blue-color;
-				border-left: 3px solid $blue-color;
-			}
-
-			.size-icon {
-				border-right: 3px solid $blue-color;
-				padding-top: 15px;
-			}
-
-			.color-icon {
-				border-right: 3px solid $blue-color;
-				color: $pink-color;
-			}
-
-			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
 				color: $white-color;
-				background-color: $blue-color;
-			}
-		}
-	}
 
-	.yellow-tshirt {
-
-		.img-flip-container {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 40px;
-			height: 40px;
-			border-bottom: 3px solid $blue-color;
-			border-left: 3px solid $blue-color;
-			color: $yellow-color;
-			padding: 2%;
-			font-size: x-large;
-		}
-
-		.img-flip-container:hover {
-			background-color: $blue-color;
-			color: $white-color;
-		}
-
-		.icon-container {
-			border-top: 3px solid $blue-color;
-			display: flex;
-			
-			.all-icons {
-				flex: 1;
-				text-align: center;
-				font-size: x-large;
-				padding-top: 20px;
-				color: $blue-color;
-				height: 60px;
-			}
-
-			.heart-icon {
-				border-right: 3px solid $blue-color;
-				border-left: 3px solid $blue-color;
-			}
-
-			.size-icon {
-				border-right: 3px solid $blue-color;
-				padding-top: 15px;
-			}
-
-			.color-icon {
-				border-right: 3px solid $blue-color;
-				color: $yellow-color;
+				.size-options {
+					opacity: 1;
+				}
 			}
 
 			.arrow-icon:hover, .heart-icon:hover, .cart-icon:hover {
@@ -256,6 +190,7 @@ $soft-blue: #8fc9ee;
 }
 
 // WEB RESPONSIVE STYLES..........//
+ 
 
 // TABLET VIEW - If the device width is greater than 550px, apply the tablet view styles //
 @media screen and (min-width: 550px) {
@@ -273,7 +208,6 @@ $soft-blue: #8fc9ee;
 	}
 }
 
-
 // DESKTOP VIEW - If the device width is greater than 880px, apply the desktop view styles //
 @media screen and (min-width: 880px) {
 	#app-container {
@@ -289,3 +223,7 @@ $soft-blue: #8fc9ee;
 		}
 	}
 } 
+
+
+
+
